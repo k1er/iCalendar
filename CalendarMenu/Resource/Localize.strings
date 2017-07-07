@@ -1,0 +1,18 @@
+/* 
+  Localize.strings
+  iCalendar
+
+  Created by 杨向阳 on 2017/3/14.
+  Copyright © 2017年 rudy. All rights reserved.
+*/
+"Monday" = "周一";
+"Tuesday" = "周二";
+"Wednesday" = "周三";
+"Thursday" = "周四";
+"Friday" = "周五";
+"Saturday" = "周六";
+"Sunday" = "周日";
+
+"exit" = "退出";
+"Boot from the start" = "开机启动";
+"Display in dock" = "在Dock中显示";

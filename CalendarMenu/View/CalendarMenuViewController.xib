@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CalendarMenuViewController">
+            <connections>
+                <outlet property="appearInDockItem" destination="0Vs-5U-Z6S" id="UZk-Yy-3iF"/>
+                <outlet property="autoStartItem" destination="tyN-Jk-Adg" id="uKX-s0-LwM"/>
+                <outlet property="bottomContentHeightConstraint" destination="biy-xm-jhH" id="EFv-ht-l8K"/>
+                <outlet property="bottomContentTopConstraint" destination="WgL-ci-Kk1" id="Svh-gc-CjT"/>
+                <outlet property="bottomContentView" destination="un4-jI-hB5" id="olK-xU-dr8"/>
+                <outlet property="exitItem" destination="XhO-gI-MaG" id="7fU-vp-Sq1"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY" customClass="YXView">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="396"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="un4-jI-hB5" customClass="YXView">
+                    <rect key="frame" x="0.0" y="0.0" width="302" height="96"/>
+                    <subviews>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="Lmr-NO-K5V">
+                            <rect key="frame" x="0.0" y="0.0" width="302" height="96"/>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" transparent="YES" imageScaling="proportionallyUpOrDown" inset="2" id="xbe-Ze-Ufd">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="respondToTapBottomView:" target="-2" id="5Zi-d8-a7c"/>
+                            </connections>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="zM0-Q8-iLX" customClass="YXButton">
+                            <rect key="frame" x="268" y="10" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="A8t-sG-7bq"/>
+                                <constraint firstAttribute="width" constant="24" id="j6F-vP-fGT"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="setting_press_ap" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="9dW-hq-nOn">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="openItem:" target="-2" id="lcM-T6-h8u"/>
+                                <outlet property="menu" destination="1cw-vd-7OC" id="a3X-Ja-UgA"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lmr-NO-K5V" secondAttribute="trailing" id="0Gz-sy-6JE"/>
+                        <constraint firstAttribute="bottom" secondItem="zM0-Q8-iLX" secondAttribute="bottom" constant="10" id="Qpe-jn-wtb"/>
+                        <constraint firstAttribute="height" constant="96" id="biy-xm-jhH"/>
+                        <constraint firstItem="Lmr-NO-K5V" firstAttribute="leading" secondItem="un4-jI-hB5" secondAttribute="leading" id="cDK-fc-5mx"/>
+                        <constraint firstAttribute="trailing" secondItem="zM0-Q8-iLX" secondAttribute="trailing" constant="10" id="kbo-qk-0ov"/>
+                        <constraint firstItem="Lmr-NO-K5V" firstAttribute="top" secondItem="un4-jI-hB5" secondAttribute="top" id="mrs-13-vd5"/>
+                        <constraint firstAttribute="bottom" secondItem="Lmr-NO-K5V" secondAttribute="bottom" id="u35-zS-ITd"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="un4-jI-hB5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="0O0-pK-hsL"/>
+                <constraint firstAttribute="trailing" secondItem="un4-jI-hB5" secondAttribute="trailing" id="OqB-eC-ncp"/>
+                <constraint firstItem="un4-jI-hB5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="300" id="WgL-ci-Kk1"/>
+            </constraints>
+            <point key="canvasLocation" x="128" y="178"/>
+        </customView>
+        <menu id="1cw-vd-7OC">
+            <items>
+                <menuItem title="开机启动" id="tyN-Jk-Adg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="autoStartItem:" target="-2" id="BRQ-RS-WWE"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="在Dock中显示" id="0Vs-5U-Z6S">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="appearInDock:" target="-2" id="EGi-a1-QEQ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="退出" id="XhO-gI-MaG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="closeMenuApp:" target="-2" id="bz9-kt-wSG"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+    <resources>
+        <image name="setting_press_ap" width="24" height="24"/>
+    </resources>
+</document>

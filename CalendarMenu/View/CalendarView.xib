@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" customClass="CalendarView">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="0AP-h4-RoU">
+                    <rect key="frame" x="0.0" y="165" width="245" height="35"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-G5-GU4">
+                            <rect key="frame" x="0.0" y="0.0" width="245" height="35"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="background" id="MhS-6r-hwV"/>
+                        </imageView>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MfA-kG-kLf">
+                            <rect key="frame" x="104" y="9" width="37" height="17"/>
+                            <buttonCell key="cell" type="square" title="Inline" bezelStyle="shadowlessSquare" alignment="center" inset="2" id="y2G-dW-fxG">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="respondToTitleButton:" target="c22-O7-iKe" id="1tW-ZM-ANw"/>
+                            </connections>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="obN-8w-xmR">
+                            <rect key="frame" x="210" y="7" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="0Xp-pc-uFs"/>
+                                <constraint firstAttribute="height" constant="20" id="g1i-Bb-yQB"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="next" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="jVp-Ht-i6O">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="respondToNextButton:" target="c22-O7-iKe" id="Wvv-0F-p2p"/>
+                            </connections>
+                        </button>
+                        <button translatesAutoresizingMaskIntoConstraints="NO" id="K8A-IL-CTL">
+                            <rect key="frame" x="15" y="7" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="H1v-ke-sIy"/>
+                                <constraint firstAttribute="height" constant="20" id="YEZ-Y0-6k6"/>
+                            </constraints>
+                            <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="previous" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Rla-Eh-h3U">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="respondToPreviousButton:" target="c22-O7-iKe" id="HBm-hO-CLV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="0Hx-ng-ojP"/>
+                        <constraint firstItem="MfA-kG-kLf" firstAttribute="centerY" secondItem="0AP-h4-RoU" secondAttribute="centerY" id="1ON-tw-9qv"/>
+                        <constraint firstItem="K8A-IL-CTL" firstAttribute="centerY" secondItem="MfA-kG-kLf" secondAttribute="centerY" id="5Qh-Tr-RpW"/>
+                        <constraint firstItem="O6M-G5-GU4" firstAttribute="leading" secondItem="0AP-h4-RoU" secondAttribute="leading" id="62Q-nM-Web"/>
+                        <constraint firstAttribute="trailing" secondItem="O6M-G5-GU4" secondAttribute="trailing" id="F4x-xN-dxG"/>
+                        <constraint firstItem="O6M-G5-GU4" firstAttribute="top" secondItem="0AP-h4-RoU" secondAttribute="top" id="MAb-nJ-1rD"/>
+                        <constraint firstAttribute="trailing" secondItem="obN-8w-xmR" secondAttribute="trailing" constant="15" id="Szk-71-2Zl"/>
+                        <constraint firstItem="MfA-kG-kLf" firstAttribute="centerX" secondItem="0AP-h4-RoU" secondAttribute="centerX" id="bkn-qH-HY9"/>
+                        <constraint firstItem="obN-8w-xmR" firstAttribute="centerY" secondItem="MfA-kG-kLf" secondAttribute="centerY" id="d9Q-YO-Oje"/>
+                        <constraint firstItem="K8A-IL-CTL" firstAttribute="leading" secondItem="0AP-h4-RoU" secondAttribute="leading" constant="15" id="rKb-4p-9r3"/>
+                        <constraint firstAttribute="bottom" secondItem="O6M-G5-GU4" secondAttribute="bottom" id="v6S-fb-zoG"/>
+                    </constraints>
+                </customView>
+                <scrollView autoresizesSubviews="NO" wantsLayer="YES" canDrawConcurrently="YES" focusRingType="none" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUI-Fw-hzh">
+                    <rect key="frame" x="0.0" y="0.0" width="245" height="141"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="A6s-Wd-ug1">
+                        <rect key="frame" x="0.0" y="0.0" width="245" height="141"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView selectable="YES" allowsEmptySelection="NO" id="qnH-id-uxA">
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="141"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" id="tXz-Xr-i5j">
+                                    <size key="itemSize" width="35" height="35"/>
+                                </collectionViewFlowLayout>
+                                <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c22-O7-iKe" id="Mdh-Rd-ffs"/>
+                                    <outlet property="delegate" destination="c22-O7-iKe" id="1PZ-6M-w84"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="OrF-yx-Mbb">
+                        <rect key="frame" x="-100" y="-100" width="245" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="AO6-nA-bX5">
+                        <rect key="frame" x="-100" y="-100" width="16" height="200"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uUI-Fw-hzh" secondAttribute="trailing" id="4Ro-pv-sDj"/>
+                <constraint firstItem="uUI-Fw-hzh" firstAttribute="top" secondItem="0AP-h4-RoU" secondAttribute="bottom" constant="24" id="6If-wS-EjF"/>
+                <constraint firstItem="uUI-Fw-hzh" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="VQf-ln-7eb"/>
+                <constraint firstAttribute="trailing" secondItem="0AP-h4-RoU" secondAttribute="trailing" id="gQs-sU-WGo"/>
+                <constraint firstAttribute="bottom" secondItem="uUI-Fw-hzh" secondAttribute="bottom" id="gsT-C9-eRm"/>
+                <constraint firstItem="0AP-h4-RoU" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="uR2-OS-hNr"/>
+                <constraint firstItem="0AP-h4-RoU" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="wAC-DW-Ujk"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="qnH-id-uxA" id="LMd-8o-rg7"/>
+                <outlet property="nextButton" destination="obN-8w-xmR" id="B53-4n-7BD"/>
+                <outlet property="previousButton" destination="K8A-IL-CTL" id="YEu-UP-zmf"/>
+                <outlet property="scrollView" destination="uUI-Fw-hzh" id="H4O-fO-fA2"/>
+                <outlet property="titileButton" destination="MfA-kG-kLf" id="oOX-5p-Nwg"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="70"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="background" width="14.5" height="14.5"/>
+        <image name="next" width="12" height="12"/>
+        <image name="previous" width="12" height="12"/>
+    </resources>
+</document>
