@@ -1,3 +1,0 @@
-[submodule "iCalendar/Vendor/ReactiveObjc"]
-	path = iCalendar/Vendor/ReactiveObjc
-	url = https://github.com/ReactiveCocoa/ReactiveObjC.git
