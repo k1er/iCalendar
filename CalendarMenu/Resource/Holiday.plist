@@ -4,46 +4,54 @@
 <dict>
 	<key>0101</key>
 	<true/>
-	<key>0102</key>
-	<true/>
-	<key>0127</key>
-	<true/>
-	<key>0128</key>
-	<true/>
-	<key>0129</key>
-	<true/>
-	<key>0130</key>
-	<true/>
-	<key>0131</key>
-	<true/>
-	<key>0201</key>
-	<true/>
-	<key>0202</key>
-	<true/>
-	<key>0204</key>
+	<key>0211</key>
 	<false/>
-	<key>0401</key>
+	<key>0215</key>
+	<true/>
+	<key>0216</key>
+	<true/>
+	<key>0217</key>
+	<true/>
+	<key>0218</key>
+	<true/>
+	<key>0219</key>
+	<true/>
+	<key>0220</key>
+	<true/>
+	<key>0221</key>
+	<true/>
+	<key>0224</key>
 	<false/>
-	<key>0402</key>
+	<key>0405</key>
 	<true/>
-	<key>0403</key>
+	<key>0406</key>
 	<true/>
-	<key>0404</key>
+	<key>0407</key>
 	<true/>
+	<key>0408</key>
+	<false/>
+	<key>0428</key>
+	<false/>
 	<key>0429</key>
 	<true/>
 	<key>0430</key>
 	<true/>
 	<key>0501</key>
 	<true/>
-	<key>0527</key>
+	<key>0616</key>
+	<true/>
+	<key>0617</key>
+	<true/>
+	<key>0618</key>
+	<true/>
+	<key>0922</key>
+	<true/>
+	<key>0923</key>
+	<true/>
+	<key>0924</key>
+	<true/>
+	<key>0929</key>
 	<false/>
-	<key>0528</key>
-	<true/>
-	<key>0529</key>
-	<true/>
-	<key>0530</key>
-	<true/>
 	<key>0930</key>
 	<false/>
 	<key>1001</key>
@@ -59,8 +67,6 @@
 	<key>1006</key>
 	<true/>
 	<key>1007</key>
-	<true/>
-	<key>1008</key>
 	<true/>
 </dict>
 </plist>

@@ -280,7 +280,6 @@
 			children = (
 				93BAD0111E77821F002C5995 /* Model */,
 				9322DD511E722DB700604BF2 /* Category */,
-				9322DD521E722DB700604BF2 /* Other */,
 				9322DD531E722DB700604BF2 /* Vendor */,
 				9322DD541E722DB700604BF2 /* View */,
 			);
@@ -309,13 +308,6 @@
 				93A0DCB61E79214600A4BB35 /* NSApplication+Ext.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		9322DD521E722DB700604BF2 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		9322DD531E722DB700604BF2 /* Vendor */ = {
